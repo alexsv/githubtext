@@ -27,8 +27,8 @@ COMMITS_MAPPING = {
 }
 
 start_date = datetime.strptime(START_MONTH, '%Y-%m')
-if start_date.weekday() != 7: #if not a sunday to start with
-    start_date = start_date + timedelta(days=7-start_date.weekday())
+if start_date.weekday() != 6: #if not a sunday to start with
+    start_date = start_date + timedelta(days=6-start_date.weekday())
 
 xlen = len(MESSAGE[0])
 
